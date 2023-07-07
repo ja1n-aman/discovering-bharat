@@ -5,7 +5,7 @@ import Image from "next/image";
 
 async function getData() {
   try {
-  const res = await fetch(`${PROCESS.env.BACKEND}/api/posts`, {
+  const res = await fetch(`${process.env.BACKEND}/api/posts`, {
     cache: "no-store",
   });
 
